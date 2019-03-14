@@ -1,0 +1,68 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "anecdotes de france",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [
+                        {
+                            "name": "citySlot",
+                            "type": "AMAZON.City"
+                        }
+                    ],
+                    "samples": [
+                        "me donner un fait sur {citySlot}",
+                        "me donner un fait",
+                        "un fait sur {citySlot}",
+                        "donne-moi une anecdote",
+                        "je veux une anecdote",
+                        "je veux un fait",
+                        "je veux une anecdote sur {citySlot}",
+                        "je veux un fait sur {citySlot}",
+                        "donner un fait",
+                        "donner un fait sur {citySlot}",
+                        "donne-moi une anecdote sur {citySlot}",
+                        "donne-moi un fait sur {citySlot}",
+                        "{citySlot}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.City",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "lille",
+                                "synonyms": [
+                                    "lisle"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
